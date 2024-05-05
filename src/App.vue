@@ -1,19 +1,9 @@
 <script setup>
-import {useCounterStore} from '@/stores/counter'
-import{ onMounted } from 'vue'
-const counterStore = useCounterStore()
-console.log(counterStore)
-onMounted(() => {
-  counterStore.getList()
- })
+
 </script>
 
 <template>
- <button @click="counterStore.increment">
-  {{ counterStore.count }}
-
- </button>
- {{ counterStore.doubleCount }}
+  <el-button type="primary">Primary</el-button>
 
 </template>
 
